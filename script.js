@@ -26,6 +26,7 @@ function calcBMI() {
 }
 
 function showUsers() {
+  document.querySelector("#infoSec").textContent = "";
   userArray.forEach((user) => {
     const template = document.querySelector("#infoTemplate").content;
     const copy = template.cloneNode(true);
